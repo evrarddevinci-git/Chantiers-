@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Portfolio photo du stage technique 2A d'Evrard BITTI chez Colas Côte-d'Or, été 2026 : chantiers à blanc, enrobés, entretien routier.">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Suivez-moi sur mes chantiers</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{
+  --bg:#f6f2ea; --bg2:#ffffff; --fg:#1d1a16; --muted:#6b645a; --line:#e4dccd;
+  --accent:#e2661a; --accent-ink:#ffffff; --chip:#efe8db; --chip-on:#1d1a16; --chip-on-ink:#f6f2ea;
+  --shadow:0 10px 30px rgba(40,30,10,.12);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#17161a; --bg2:#201f24; --fg:#f0ece4; --muted:#a39d92; --line:#34323a;
+  --accent:#f0813a; --accent-ink:#1d1a16; --chip:#2a292f; --chip-on:#f0ece4; --chip-on-ink:#17161a;
+  --shadow:0 10px 30px rgba(0,0,0,.5); color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#17161a; --bg2:#201f24; --fg:#f0ece4; --muted:#a39d92; --line:#34323a;
+  --accent:#f0813a; --accent-ink:#1d1a16; --chip:#2a292f; --chip-on:#f0ece4; --chip-on-ink:#17161a;
+  --shadow:0 10px 30px rgba(0,0,0,.5); color-scheme:dark }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:0 60px;padding-inline:16px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;text-wrap:balance;margin:0;line-height:1}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+
+header.hero{padding-block:48px 28px;border-bottom:4px solid var(--fg);position:relative}
+header.hero::before{content:"";position:absolute;left:0;right:0;bottom:-10px;height:3px;background:repeating-linear-gradient(90deg,var(--accent) 0 40px,transparent 40px 70px)}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);font-weight:700;letter-spacing:.01em;text-transform:uppercase}
+.hero h1 span{color:var(--accent)}
+.hero p.sub{font-size:1.25rem;margin:14px 0 0;max-width:34em;color:var(--muted)}
+.hero .id{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:.95rem;color:var(--muted)}
+.hero .id b{color:var(--fg);font-weight:600}
+
+nav.chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:16px;display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+nav.chips a{text-decoration:none;color:var(--fg);background:var(--chip);border-radius:999px;padding:6px 14px;font-size:.92rem;font-weight:600;white-space:nowrap}
+nav.chips a:hover,nav.chips a.on{background:var(--chip-on);color:var(--chip-on-ink)}
+nav.chips a small{opacity:.65;font-weight:400;margin-left:4px}
+
+section{padding-block:40px 8px;scroll-margin-top:70px}
+.sec-head{display:grid;gap:8px;margin-bottom:22px;max-width:46em}
+.sec-head h2{font-size:clamp(1.9rem,4.5vw,3rem);text-transform:uppercase}
+.sec-head p{margin:0;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+figure{margin:0;background:var(--bg2);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0;cursor:zoom-in;transition:transform .15s}
+figure:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+figure .ph{aspect-ratio:4/3;max-width:100%;overflow:hidden;background:var(--chip)}
+figure img{width:100%;height:100%;object-fit:cover;display:block}
+figcaption{padding:10px 12px 12px;font-size:.93rem;line-height:1.35}
+figcaption .site{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:3px}
+figure.tall .ph{aspect-ratio:3/4}
+@media (min-width:700px){ figure.wide{grid-column:span 2} figure.wide .ph{aspect-ratio:2/1} }
+
+.box{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-direction:row;flex-wrap:wrap;gap:18px}
+.box article{flex:1 1 300px;min-width:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:26px}
+.steps div{border-top:3px solid var(--accent);padding-top:10px}
+.steps b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:1.35rem;text-transform:uppercase}
+.steps span{color:var(--muted);font-size:.95rem}
+
+footer{margin-top:50px;border-top:1px solid var(--line);padding-top:18px;font-size:.9rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(10,9,8,.94);z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:env(safe-area-inset-top,0px) 12px env(safe-area-inset-bottom,0px)}
+.lb img{max-width:100%;max-height:78vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb .cap{color:#f0ece4;margin-top:14px;max-width:60ch;text-align:center;font-size:1rem}
+.lb .cap .site{color:#f0813a;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem;font-weight:600;display:block}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;font-size:1.6rem;width:48px;height:48px;border-radius:50%;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.25)}
+.lb .x{top:calc(14px + env(safe-area-inset-top,0px));right:14px}
+.lb .p{left:8px;top:50%;transform:translateY(-50%)}
+.lb .n{right:8px;top:50%;transform:translateY(-50%)}
+.lb .cnt{position:absolute;top:calc(26px + env(safe-area-inset-top,0px));left:18px;color:#a39d92;font-variant-numeric:tabular-nums;font-size:.9rem}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Portfolio de stage · été 2026</div>
+  <h1>Suivez-moi sur <span>mes chantiers</span></h1>
+  <p class="sub">Onze semaines chez Colas Côte-d'Or, du terrassement à l'enrobé.</p>
+  <div class="id">
+    <span><b>Evrard BITTI</b>, élève ingénieur ESTP Paris</span>
+    <span>Stage technique 2A · <b>Colas</b>, établissement Côte-d'Or (Longvic)</span>
+    <span>17 juin – 28 août 2026</span>
+  </div>
+</header>
+
+<nav class="chips" id="chips">
+  <a href="#blanc">Chantiers à blanc <small>27</small></a>
+  <a href="#enrobes">Chantiers d'enrobés <small>16</small></a>
+  <a href="#entretien">Entretien routier <small>11</small></a>
+</nav>
+
+<section id="intro" style="padding-top:28px">
+  <div class="box">
+    <article>
+      <p>Ce portfolio accompagne mon rapport de stage. Les photos y sont classées selon les trois grands types de chantiers que j'ai suivis à Dijon et dans sa périphérie, aux côtés des chefs de chantier de l'agence. Chaque image est légendée : ce qu'elle montre, et souvent ce qu'elle m'a appris. Cliquez sur une photo pour l'agrandir.</p>
+    </article>
+  </div>
+  <div class="steps">
+    <div><b>Chantier à blanc</b><span>Terrassement, traitement de sol, réseaux, bordures : tout ce qui se construit avant que la chaussée ne soit noire.</span></div>
+    <div><b>Enrobés</b><span>Finisseur, compacteurs, joints, enrobé clair à liant végétal : la couche que l'usager verra.</span></div>
+    <div><b>Entretien routier</b><span>Balisage, rabotage, purges et point à temps automatique sur le réseau existant.</span></div>
+  </div>
+</section>
+
+<section id="blanc">
+  <div class="sec-head">
+    <div class="eyebrow">01</div>
+    <h2>Chantiers à blanc</h2>
+    <p>La Bourgogne, Resotainer, École des métiers de Longvic, Haute-Ville, Quetigny, SD Service : six chantiers où la chaussée se prépare avant de se revêtir.</p>
+  </div>
+  <div class="grid" data-sec="Chantiers à blanc">
+    <figure class="wide"><div class="ph"><img loading="lazy" src="img/blanc_093.jpg" alt=""></div><figcaption><span class="site">La Bourgogne · Dijon</span>L'ossature métallique du futur bâtiment se dresse sur la plateforme que nous avons réglée. Le gros œuvre attend ses réseaux.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_090.jpg" alt=""></div><figcaption><span class="site">Plateforme</span>Plateforme réglée et compactée, prête à recevoir la structure de chaussée.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_008.jpg" alt=""></div><figcaption><span class="site">Terrassement</span>Pelle Liebherr en réglage à la lame : quelques centimètres font toute la différence sur une plateforme.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_069.jpg" alt=""></div><figcaption><span class="site">Traitement de sol</span>L'épandeur de liant dose le ciment au mètre carré, première étape du traitement de sol en place.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_072.jpg" alt=""></div><figcaption><span class="site">Traitement de sol</span>L'atelier de traitement de sol sur la plateforme : liant, malaxage, puis réglage et compactage.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_075.jpg" alt=""></div><figcaption><span class="site">Traitement de sol</span>Sol malaxé au ciment, avant le réglage final. Le matériau du site devient une couche de forme.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_034.jpg" alt=""></div><figcaption><span class="site">École des métiers · Longvic</span>Plateforme terminée, bordures en place : il ne manque plus que l'enrobé.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_033.jpg" alt=""></div><figcaption><span class="site">Tranchée drainante</span>Géotextile et gravillon 20/35 : la tranchée drainante collecte l'eau sans se colmater.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_130.jpg" alt=""></div><figcaption><span class="site">Tranchée drainante</span>Pose du drain dans son géotextile, avant la fermeture et le remblai en gravillon.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_046.jpg" alt=""></div><figcaption><span class="site">Réseaux secs</span>Fourreaux TPC rouges en attente : chaque diamètre (60, 90, 160) correspond à un réseau.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_181.jpg" alt=""></div><figcaption><span class="site">Réseaux</span>Grillage avertisseur posé au-dessus du réseau, comme l'impose la norme NF P 98-332.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_041.jpg" alt=""></div><figcaption><span class="site">Réseaux humides</span>Canalisation PE bleue d'eau potable en fond de fouille, sur son lit de sable.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_129.jpg" alt=""></div><figcaption><span class="site">Quetigny</span>Pose d'un tuyau annelé à la pelle : la machine descend, le compagnon guide.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_026.jpg" alt=""></div><figcaption><span class="site">Quetigny</span>Tuyau annelé posé en tranchée, avant l'enrobage et le remblai.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_241.jpg" alt=""></div><figcaption><span class="site">Quetigny</span>Une canalisation non repérée, heurtée à la pelle, et la tranchée se remplit. La DICT ne dit pas tout : une leçon que je n'oublierai pas.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_070.jpg" alt=""></div><figcaption><span class="site">Topographie</span>Laser rotatif pour le contrôle des niveaux : la plateforme se règle au centimètre.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_048.jpg" alt=""></div><figcaption><span class="site">Implantation</span>Fiches et cordeau : la géométrie du projet avant la matière.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_049.jpg" alt=""></div><figcaption><span class="site">Assainissement</span>Tampon de regard mis à niveau dans la grave, prêt à être enrobé.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_104.jpg" alt=""></div><figcaption><span class="site">Réseaux secs</span>Regard de tirage : les fourreaux arrivent, les câbles suivront.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_042.jpg" alt=""></div><figcaption><span class="site">Bordures</span>Pose de bordures P1 : l'alignement se tient au cordeau et au niveau.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_137.jpg" alt=""></div><figcaption><span class="site">Bordures</span>Bordure calée au béton, réglée sur le cordeau.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_030.jpg" alt=""></div><figcaption><span class="site">Bordures</span>Bordures courbes : chaque élément trouve sa place, et la courbe trouve son rayon.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_199.jpg" alt=""></div><figcaption><span class="site">Assainissement</span>Caniveau à grille posé, en attente de l'enrobé.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_231.jpg" alt=""></div><figcaption><span class="site">SD Service</span>Pied de poteau gravillonné : la finition compte autant que la structure.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/blanc_037.jpg" alt=""></div><figcaption><span class="site">Compactage</span>Compacteur à pneus Colas : le poids et le passage font la portance.</figcaption></figure>
+    <figure class="wide"><div class="ph"><img loading="lazy" src="img/blanc_113.jpg" alt=""></div><figcaption><span class="site">Rabotage</span>Raboteuse Wirtgen en action : l'ancienne chaussée part en fraisats, réutilisables.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/blanc_122.jpg" alt=""></div><figcaption><span class="site">Rabotage</span>Traçage orange au sol : les passes de rabotage sont repérées avant que la machine ne passe.</figcaption></figure>
+  </div>
+</section>
+
+<section id="enrobes">
+  <div class="sec-head">
+    <div class="eyebrow">02</div>
+    <h2>Chantiers d'enrobés</h2>
+    <p>Resotainer, Chenôve, Chagny, Flagey-lès-Auxonne, accès Intermarché à Dijon : la couche de roulement, du finisseur au marquage.</p>
+  </div>
+  <div class="grid" data-sec="Chantiers d'enrobés">
+    <figure class="wide"><div class="ph"><img loading="lazy" src="img/enrobe_263.jpg" alt=""></div><figcaption><span class="site">Finisseur</span>Le tapis d'enrobé prend forme derrière la table du finisseur ; l'épaisseur se règle en tenant compte du foisonnement.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_303.jpg" alt=""></div><figcaption><span class="site">Chagny</span>Voie d'accès enrobée au finisseur, à la limite exacte du traçage.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_255.jpg" alt=""></div><figcaption><span class="site">Mise en œuvre</span>Enrobé repris à la pelle pour les finitions : là où le finisseur ne passe pas, la main passe.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_262.jpg" alt=""></div><figcaption><span class="site">Compactage</span>Le compacteur suit le finisseur de près : l'enrobé se compacte chaud.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_297.jpg" alt=""></div><figcaption><span class="site">Compactage</span>Plaque vibrante pour les reprises ponctuelles et les abords de regards.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_266.jpg" alt=""></div><figcaption><span class="site">Joints</span>Joint traité à l'émulsion puis sablé au sable siliceux : l'étanchéité se joue sur quelques centimètres.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_253.jpg" alt=""></div><figcaption><span class="site">Regards</span>Nettoyage d'un tampon de regard avant le passage du compacteur. L'agent anti-adhérent évite que l'enrobé ne colle.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_275.jpg" alt=""></div><figcaption><span class="site">Resotainer</span>Plateforme enrobée sur toute sa surface : le chantier à blanc de juin devient la chaussée d'août.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_247.jpg" alt=""></div><figcaption><span class="site">Mise en œuvre</span>Enrobé posé en courbe contre la bordure, avant compactage.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_254.jpg" alt=""></div><figcaption><span class="site">Route finie</span>Chaussée terminée et marquée : le résultat d'une journée au finisseur.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_294.jpg" alt=""></div><figcaption><span class="site">Accès Intermarché · Dijon</span>Enrobé clair à liant végétal : la formulation change, la mise en œuvre reste la même.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_295.jpg" alt=""></div><figcaption><span class="site">Accès Intermarché · Dijon</span>Compactage à la plaque de l'enrobé clair devant le magasin.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/enrobe_268.jpg" alt=""></div><figcaption><span class="site">Accès Intermarché · Dijon</span>Le cheminement en enrobé clair terminé le long de la façade.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_271.jpg" alt=""></div><figcaption><span class="site">Chagny</span>La pelle charge le camion : les matériaux partent, l'enrobé arrive.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_309.jpg" alt=""></div><figcaption><span class="site">Îlot</span>Enrobé posé autour d'un îlot : les petites surfaces demandent autant de soin que les grandes.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/enrobe_311.jpg" alt=""></div><figcaption><span class="site">Route départementale</span>Chaussée refaite, marquage axial posé : la route rendue à ses usagers.</figcaption></figure>
+  </div>
+</section>
+
+<section id="entretien">
+  <div class="sec-head">
+    <div class="eyebrow">03</div>
+    <h2>Entretien routier</h2>
+    <p>Chantier 30 Octobre à Dijon et Messigny-et-Vantoux : entretenir une route, c'est la faire durer.</p>
+  </div>
+  <div class="grid" data-sec="Entretien routier">
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_320.jpg" alt=""></div><figcaption><span class="site">30 Octobre · Dijon</span>Balisage en circulation alternée : la sécurité du chantier commence au panneau.</figcaption></figure>
+    <figure class="wide"><div class="ph"><img loading="lazy" src="img/entretien_110.jpg" alt=""></div><figcaption><span class="site">Rabotage</span>Les fraisats sont chargés directement en camion par le tapis de la raboteuse.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/entretien_331.jpg" alt=""></div><figcaption><span class="site">Diagnostic</span>Repérage à la bombe bleue des fissures et nids-de-poule à traiter.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/entretien_317.jpg" alt=""></div><figcaption><span class="site">Messigny-et-Vantoux</span>La répandeuse PATA (point à temps automatique) : émulsion et gravillons, un seul passage.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_326.jpg" alt=""></div><figcaption><span class="site">PATA</span>La rampe de projection de la PATA, vue de près.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_315.jpg" alt=""></div><figcaption><span class="site">PATA</span>Réparation réalisée : gravillons sur émulsion, la circulation finit le compactage.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_316.jpg" alt=""></div><figcaption><span class="site">PATA</span>Point à temps sur une chaussée rurale : réparer vite, avant que le trou ne s'agrandisse.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_336.jpg" alt=""></div><figcaption><span class="site">Matériau</span>Neomuls, émulsion de bitume à froid utilisée pour l'entretien.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/entretien_333.jpg" alt=""></div><figcaption><span class="site">Purge</span>Minipelle pour purger une zone dégradée avant de la reconstituer.</figcaption></figure>
+    <figure><div class="ph"><img loading="lazy" src="img/entretien_318.jpg" alt=""></div><figcaption><span class="site">Compactage</span>Petit compacteur Colas pour les reprises localisées.</figcaption></figure>
+    <figure class="tall"><div class="ph"><img loading="lazy" src="img/entretien_324.jpg" alt=""></div><figcaption><span class="site">Signalisation</span>Chaussée glissante : le panneau reste tant que les gravillons ne sont pas fixés.</figcaption></figure>
+  </div>
+</section>
+
+<footer>
+  <span>Photos prises par Evrard BITTI, juin – août 2026, avec l'accord de l'encadrement Colas Côte-d'Or.</span>
+  <span>Annexe du rapport de stage technique 2A · ESTP Paris · PGE2D</span>
+</footer>
+</div>
+
+<div class="lb" id="lb" hidden>
+  <span class="cnt" id="cnt"></span>
+  <button class="x" id="x" aria-label="Fermer">×</button>
+  <button class="p" id="p" aria-label="Précédente">‹</button>
+  <img id="lbimg" alt="">
+  <div class="cap" id="lbcap"></div>
+  <button class="n" id="n" aria-label="Suivante">›</button>
+</div>
+
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('figure'));
+  var lb=document.getElementById('lb'),img=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),cnt=document.getElementById('cnt');
+  var cur=0;
+  function show(i){
+    cur=(i+figs.length)%figs.length;
+    var f=figs[cur];
+    img.src=f.querySelector('img').src;
+    cap.innerHTML=f.querySelector('figcaption').innerHTML;
+    cnt.textContent=(cur+1)+' / '+figs.length;
+    lb.hidden=false; document.body.style.overflow='hidden';
+  }
+  function hide(){lb.hidden=true;document.body.style.overflow='';}
+  figs.forEach(function(f,i){f.addEventListener('click',function(){show(i)})});
+  document.getElementById('x').onclick=hide;
+  document.getElementById('p').onclick=function(e){e.stopPropagation();show(cur-1)};
+  document.getElementById('n').onclick=function(e){e.stopPropagation();show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)hide()});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')hide(); else if(e.key==='ArrowLeft')show(cur-1); else if(e.key==='ArrowRight')show(cur+1);
+  });
+  var sx=0; lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx; if(dx>50)show(cur-1); else if(dx<-50)show(cur+1);});
+  // active chip
+  var links=[].slice.call(document.querySelectorAll('#chips a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
+    secs.forEach(function(s){io.observe(s)});
+  }
+})();
+</script>
+
+</body>
+</html>
